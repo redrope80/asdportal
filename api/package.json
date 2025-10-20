@@ -1,0 +1,28 @@
+{
+  "name": "customer-portal-api",
+  "version": "1.0.0",
+  "description": "Azure Functions API for Customer Portal",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prestart": "npm run build",
+    "start": "func start",
+    "test": "echo \"No tests yet\""
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0",
+    "mssql": "^10.0.2",
+    "uuid": "^9.0.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@azure/functions-core-tools": "^4.0.5455",
+    "@types/node": "^18.x",
+    "@types/uuid": "^9.0.7",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.5",
+    "typescript": "^4.0.0"
+  }
+}

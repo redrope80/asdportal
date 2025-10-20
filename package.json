@@ -1,0 +1,15 @@
+{
+  "name": "customer-portal",
+  "version": "1.0.0",
+  "description": "A comprehensive customer portal built for Arizona Shower Door, featuring secure authentication, news management, price book, virtual showroom, and order history tracking.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mssql": "^12.0.0"
+  }
+}
