@@ -1,6 +1,9 @@
-{
-  "version": "0.2",
-  "command": "npm install && npm run build",
-  "postBuildCommand": "echo 'Build complete'",
-  "outputPath": "dist"
-}
+local.settings.json
+**/*.ts
+node_modules/
+.vscode/
+.git/
+tests/
+bin/
+obj/
+README.md

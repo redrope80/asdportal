@@ -1,12 +1,9 @@
-import { app } from '@azure/functions';
-
-// Sample local settings structure (not committed to git)
-// {
-//   "IsEncrypted": false,
-//   "Values": {
-//     "AzureWebJobsStorage": "",
-//     "FUNCTIONS_WORKER_RUNTIME": "node",
-//     "AZURE_SQL_CONNECTIONSTRING": "Server=tcp:your-server.database.windows.net,1433;Initial Catalog=customer-portal;Persist Security Info=False;User ID=your-username;Password=your-password;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
-//     "JWT_SECRET": "your-jwt-secret-key"
-//   }
-// }
+{
+	"IsEncrypted": false,
+	"Values": {
+		"AzureWebJobsStorage": "",
+		"FUNCTIONS_WORKER_RUNTIME": "node",
+		"AZURE_SQL_CONNECTIONSTRING": "Server=tcp:your-server.database.windows.net,1433;Initial Catalog=customer-portal;Persist Security Info=False;User ID=your-username;Password=your-password;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
+		"JWT_SECRET": "your-jwt-secret-key"
+	}
+}
