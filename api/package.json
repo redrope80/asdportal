@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "tsc && npm run copy-config",
-    "copy-config": "node -e \"require('fs').copyFileSync('host.json', 'dist/host.json')\"",
+    "copy-config": "node -e \"const fs=require('fs'); fs.copyFileSync('host.json','dist/host.json'); fs.copyFileSync('package.json','dist/package.json');\"",
     "watch": "tsc -w",
     "prestart": "npm run build",
     "start": "func start",
