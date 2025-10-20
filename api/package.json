@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "tsc && npm run copy-config",
-    "copy-config": "node -e \"const fs=require('fs'); fs.copyFileSync('host.json','dist/host.json'); fs.copyFileSync('package.json','dist/package.json');\"",
+    "copy-config": "node -e \"const fs=require('fs'); const pkg=JSON.parse(fs.readFileSync('package.json','utf8')); const out={ name: pkg.name, version: pkg.version, description: pkg.description, main: 'src/index.js', engines: pkg.engines, dependencies: pkg.dependencies }; fs.mkdirSync('dist', { recursive: true }); fs.writeFileSync('dist/package.json', JSON.stringify(out, null, 2)); fs.copyFileSync('host.json','dist/host.json');\"",
     "watch": "tsc -w",
     "prestart": "npm run build",
     "start": "func start",
