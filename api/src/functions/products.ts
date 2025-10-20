@@ -3,7 +3,7 @@ import { executeQuery } from '../shared/database';
 import { createSuccessResponse, createErrorResponse, parseIntOrDefault } from '../shared/utils';
 import { Product, ProductImage, ProductSpecification, PaginatedResponse } from '../shared/types';
 
-export async function productsGet(request: HttpRequest, context: InvocationContext): Promise<HttpResponseInit> {
+export async function getProducts(request: HttpRequest, context: InvocationContext): Promise<HttpResponseInit> {
     try {
         const page = parseIntOrDefault(request.query.get('page'), 1);
         const pageSize = parseIntOrDefault(request.query.get('pageSize'), 20);
@@ -167,7 +167,7 @@ app.http('productsGet', {
     methods: ['GET'],
     authLevel: 'anonymous',
     route: 'products',
-    handler: productsGet
+    handler: getProducts
 });
 
 app.http('productsGetById', {
