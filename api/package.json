@@ -18,7 +18,7 @@
     "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
-    "@azure/functions-core-tools": "^4.0.5455",
+    "azure-functions-core-tools": "^4.0.5455",
     "@types/node": "^18.x",
     "@types/uuid": "^9.0.7",
     "@types/bcryptjs": "^2.4.6",

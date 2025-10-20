@@ -5,8 +5,8 @@ const path = require('path');
 const config = {
     server: 'redropedev1.database.windows.net',
     database: 'arizona-shower-door-db-prod',
-    user: 'sqladmin',
-    password: 'CustomerPortal2025!',
+    user: 'asdportaldbad',
+    password: 'PurpleSpaceThr3eViking',
     options: {
         encrypt: true,
         trustServerCertificate: false
