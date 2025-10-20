@@ -2,10 +2,14 @@
   "name": "customer-portal-api",
   "version": "1.0.0",
   "description": "Azure Functions API for Customer Portal",
-  "main": "src/index.js",
+  "main": "dist/src/index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w", 
+    "build": "tsc && npm run copy-config",
+    "copy-config": "node -e \"require('fs').copyFileSync('host.json', 'dist/host.json')\"",
+    "watch": "tsc -w",
     "prestart": "npm run build",
     "start": "func start",
     "test": "echo \"No tests yet\""

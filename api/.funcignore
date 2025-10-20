@@ -1,0 +1,6 @@
+{
+  "version": "0.2",
+  "command": "npm install && npm run build",
+  "postBuildCommand": "echo 'Build complete'",
+  "outputPath": "dist"
+}
